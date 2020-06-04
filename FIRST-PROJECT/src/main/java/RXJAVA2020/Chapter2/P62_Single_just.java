@@ -2,9 +2,6 @@ package RXJAVA2020.Chapter2;
 
 import io.reactivex.Single;
 
-/*
-
- */
 public class P62_Single_just {
     private static Logger log = Logger.getInstance();
 

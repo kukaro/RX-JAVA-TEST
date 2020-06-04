@@ -4,6 +4,7 @@ package RXJAVA2020.Chapter2;
 import io.reactivex.Observable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 /*
 Observable은 기본적으로 데이터를 발송할 때는 just를 사용해서 발송한다.
 */

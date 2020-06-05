@@ -11,8 +11,15 @@ public class P63_Single_ObservableToSingle {
 
     public static void main(String[] args) {
 
-        Observable<String> source = Observable.just("Hello Single");
-        Single.fromObservable(source).subscribe(log::info);
+        Single.fromObservable(Observable.just("Hello Single")).subscribe(log::info);
+
+        Observable.just("Hello Single").single("defaultitem").subscribe(log::info);
+
+        Observable.just("Hello Single").first("defaultitem").subscribe(log::info);
+
+        Observable.empty().single("defaultitem").subscribe(log::info);
+
+        Observable.just("Hello Single").take(1).single("defaultitem").subscribe(log::info);
     }
 }
 
